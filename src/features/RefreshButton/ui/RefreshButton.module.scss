@@ -1,0 +1,41 @@
+.button {
+  color: #fff;
+  background-color: #EB0237;
+  padding: 15px 40px;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+
+  &:active {
+    background-color: #A01131;
+  }
+
+  &:disabled {
+    background-color: #701328;
+    color: #787878;
+    & path {
+      fill: #787878;
+    }
+  }
+}
+
+.icon {
+  transition: transform 0.3s;
+  display: flex;
+}
+
+.icon.loading {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

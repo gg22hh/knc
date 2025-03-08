@@ -1,0 +1,32 @@
+.scoreBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.score {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.status {
+  min-width: 92px;
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.ongoing {
+  background-color: #43AD28;
+}
+
+.finished {
+  background-color: #EB0237;
+}
+
+.scheduled {
+  background-color: #EB6402;
+}
